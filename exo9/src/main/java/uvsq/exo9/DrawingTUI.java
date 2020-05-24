@@ -12,12 +12,12 @@ import java.util.List;
 public class DrawingTUI {
 
 	/**
-	 * liste  creer par l'utilisateur.
+	 * liste creer par l'utilisateur.
 	 */
 	private List<Forme> listeFormes;
 
 	/**
-	 * listes  creer par l'utilisateur.
+	 * listes creer par l'utilisateur.
 	 */
 	private List<GroupeForme> listeGroupes;
 
@@ -31,6 +31,7 @@ public class DrawingTUI {
 
 	/**
 	 * getDepFormeCmd.
+	 * 
 	 * @param chaine entrer .
 	 * @return cmd commande .
 	 * @throws SQLException
@@ -47,15 +48,13 @@ public class DrawingTUI {
 				} else {
 					int depX = Integer.parseInt(chaine[2]);
 					int depY = Integer.parseInt(chaine[3]);
-					
+
 					if (forme instanceof GroupeForme) {
-					
+
 						cmd = new CommandMoveGroup((GroupeForme) forme, depX, depY);
 						((CommandMove) cmd).execute();
-					
-					}
 
-					
+					}
 
 				}
 			} else {
@@ -111,7 +110,7 @@ public class DrawingTUI {
 	 * getCreationCmd.
 	 * 
 	 * @param chaine entrer par l'utilisateur.
-	 * @throws SQLException
+	 * @throws SQLException .
 	 */
 	public EnregistrerCommande getCreationCmd(String[] chaine) throws SQLException {
 		EnregistrerCommande com = null;
@@ -223,7 +222,7 @@ public class DrawingTUI {
 	}
 
 	/**
-	 * methode nextCommande pour traiter les commandes 
+	 * methode nextCommande pour traiter les commandes
 	 * 
 	 * @param text chiane entrée.
 	 * @return commande a executer.
@@ -255,8 +254,7 @@ public class DrawingTUI {
 	 * @param nomForme nom de la forme.
 	 * @return la forme avec le nom chercher.
 	 */
-	public Forme getForme(final List<Forme> l,
-			final String nomForme) {
+	public Forme getForme(final List<Forme> l, final String nomForme) {
 		for (Forme f : l) {
 			if (f.getName().equals(nomForme)) {
 				return f;
@@ -282,10 +280,10 @@ public class DrawingTUI {
 	}
 
 	/**
-	 * createGroupe pour creation un groupe si il ne existe pas
-	 * et ajouter la forme a ce groupe.
-	 * si le groupe existe on ajoute seulement la forme a ce groupe.
-	 * @param f   forme a ajouter dans le groupe
+	 * createGroupe pour creation un groupe si il ne existe pas et ajouter la forme
+	 * a ce groupe. si le groupe existe on ajoute seulement la forme a ce groupe.
+	 * 
+	 * @param f forme a ajouter dans le groupe
 	 */
 	public void createGroupe(final Forme f) {
 		Boolean existeG = false;
@@ -310,7 +308,7 @@ public class DrawingTUI {
 	}
 
 	/**
-	 * getlistFormes  retourner la liste des formes créer.
+	 * getlistFormes retourner la liste des formes créer.
 	 * 
 	 * @return listeFormes.
 	 */
