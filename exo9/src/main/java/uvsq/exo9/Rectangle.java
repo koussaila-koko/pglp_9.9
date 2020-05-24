@@ -12,12 +12,12 @@ import uvsq.exo9.Forme;
 public class Rectangle extends Forme {
 
 	/**
-	 *  point pour creer un rectangle.
+	 * point pour creer un rectangle.
 	 */
 	private Point point;
 
 	/**
-	 *  longueur du rectangle.
+	 * longueur du rectangle.
 	 */
 	private double longueur;
 
@@ -29,13 +29,12 @@ public class Rectangle extends Forme {
 	/**
 	 * constructeur Rectangle.
 	 * 
-	 * @param name     du rectangle.
-	 * @param p        point pour creer un rectangle.
-	 * @param lon      longueur du rectangle.
-	 * @param lar      largeur du rectangle.
+	 * @param name du rectangle.
+	 * @param p    point pour creer un rectangle.
+	 * @param lon  longueur du rectangle.
+	 * @param lar  largeur du rectangle.
 	 */
-	public Rectangle(final String name, final Point p,
-			final double lon, final double lar) {
+	public Rectangle(final String name, final Point p, final double lon, final double lar) {
 		super(name);
 		this.point = p;
 		this.longueur = lon;
@@ -69,17 +68,18 @@ public class Rectangle extends Forme {
 		return largeur;
 	}
 
-
 	/**
 	 * print le rectangle
-	  */
+	 */
 	public void print() {
 		System.out.println("Rectangle{" + "nom='" + this.getName() + '\'' + ", p1=" + point.toString() + ", longueur="
 				+ longueur + ", largeur=" + largeur + "}\n");
 
 	}
+
 	/**
 	 * deplacer le rectangle
+	 * 
 	 * @param x .
 	 * @param y .
 	 */
