@@ -14,7 +14,7 @@ public class CommandMoveCarre implements CommandMove {
 	private Carre carre;
 
 	/**
-	 *  deplacement sur l'axe x.
+	 * deplacement sur l'axe x.
 	 */
 	private int depX;
 
@@ -26,12 +26,11 @@ public class CommandMoveCarre implements CommandMove {
 	/**
 	 * constructeur CommandMoveCarre.
 	 * 
-	 * @param c carre.
+	 * @param c  carre.
 	 * @param dx deplacement sur l'axe x.
 	 * @param dy deplacement sur l'axe y.
 	 */
-	public CommandMoveCarre(final Carre c, final int dx,
-			final int dy) {
+	public CommandMoveCarre(final Carre c, final int dx, final int dy) {
 		this.carre = c;
 		this.depX = dx;
 		this.depY = dy;
