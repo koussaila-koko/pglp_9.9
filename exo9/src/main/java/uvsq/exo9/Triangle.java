@@ -24,8 +24,7 @@ public class Triangle extends Forme {
 	 * @param p2   le deuxième Point.
 	 * @param p3   le troisième Point.
 	 */
-	public Triangle(final String name, final Point p1,
-			final Point p2,final Point p3) {
+	public Triangle(final String name, final Point p1, final Point p2, final Point p3) {
 		super(name);
 		this.p1 = p1;
 		this.p2 = p2;
@@ -42,7 +41,7 @@ public class Triangle extends Forme {
 	}
 
 	/**
-	 *  retourne le deuxième Point
+	 * retourne le deuxième Point
 	 * 
 	 * @return p2.
 	 */
@@ -60,9 +59,10 @@ public class Triangle extends Forme {
 	}
 
 	/**
-	 *  deplacer le triangle.
-	 *  @param x
-	 *  @param y
+	 * deplacer le triangle.
+	 * 
+	 * @param x
+	 * @param y
 	 */
 	public void deplacer(final int x, final int y) {
 		this.p1.sommePoint(x, y);
@@ -72,7 +72,7 @@ public class Triangle extends Forme {
 	}
 
 	/**
-	 *  afficher le triangle.
+	 * afficher le triangle.
 	 */
 	public void print() {
 		System.out.println("Triangle{" + "Nom='" + this.getName() + '\'' + ", p1=" + p1.toString() + ", p2="
