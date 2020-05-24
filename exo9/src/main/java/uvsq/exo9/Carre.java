@@ -26,7 +26,7 @@ public class Carre extends Forme {
 	 * @param p    point pour creer un carré.
 	 * @param cote le cote d'un carré.
 	 */
-	public Carre(final String nom,final Point p, final double cote) {
+	public Carre(final String nom, final Point p, final double cote) {
 		super(nom);
 		this.point = p;
 		this.cote = cote;
