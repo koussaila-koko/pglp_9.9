@@ -49,7 +49,8 @@ public class RectangleDaoJdbc implements Dao<Rectangle> {
 
 	/**
 	 * methode pour insérer des tuples dans la table rectangle.
-	 * @param obj 
+	 * 
+	 * @param obj
 	 */
 	public Rectangle create(final Rectangle obj) {
 		PreparedStatement statement = null;
@@ -83,6 +84,7 @@ public class RectangleDaoJdbc implements Dao<Rectangle> {
 
 	/**
 	 * chercher des tuples du la table rectangle.
+	 * 
 	 * @param s .
 	 */
 	public Rectangle find(final String s) {
@@ -117,6 +119,7 @@ public class RectangleDaoJdbc implements Dao<Rectangle> {
 
 	/**
 	 * methode pour modifier des tuples du la table rectangle.
+	 * 
 	 * @param obj .
 	 */
 	public Rectangle update(Rectangle obj) {
@@ -149,6 +152,7 @@ public class RectangleDaoJdbc implements Dao<Rectangle> {
 
 	/**
 	 * supprimer des tupes du la table rectangle.
+	 * 
 	 * @param obj .
 	 */
 	public void delete(final Rectangle obj) {
@@ -181,13 +185,12 @@ public class RectangleDaoJdbc implements Dao<Rectangle> {
 	 * methode pour savoir si la table existe déja ou non.
 	 * 
 	 * @param tableName nom de la table.
-	 * @param c      la connexion.
+	 * @param c         la connexion.
 	 * @return renvoie une valeur booléenne si l'objet ResultSet contient plus de
 	 *         lignes.
 	 * @throws SQLException Exception sql.
 	 */
-	boolean doesTableExists(final String tableName,
-			final Connection c) throws SQLException {
+	boolean doesTableExists(final String tableName, final Connection c) throws SQLException {
 		DatabaseMetaData meta = c.getMetaData();
 		ResultSet result = meta.getTables(null, null, tableName.toUpperCase(), null);
 		return result.next();
