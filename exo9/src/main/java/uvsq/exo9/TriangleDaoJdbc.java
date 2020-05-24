@@ -25,6 +25,7 @@ public class TriangleDaoJdbc implements Dao<Triangle> {
 
 	/**
 	 * constructeur TriangleDaoJdbc().
+	 * 
 	 * @param connect .
 	 */
 	public TriangleDaoJdbc(final Connection connect) {
@@ -43,6 +44,7 @@ public class TriangleDaoJdbc implements Dao<Triangle> {
 
 	/**
 	 * methode pour insérer des tuples dans la table triangle.
+	 * 
 	 * @param obj .
 	 */
 	public Triangle create(final Triangle obj) {
@@ -80,6 +82,7 @@ public class TriangleDaoJdbc implements Dao<Triangle> {
 
 	/**
 	 * methode pour chercher des tuples dans la table triangle.
+	 * 
 	 * @param s .
 	 */
 	public Triangle find(final String s) {
@@ -115,8 +118,9 @@ public class TriangleDaoJdbc implements Dao<Triangle> {
 	}
 
 	/**
-	 *  modifier des tuples dans la table triangle.
-	 *  @param obj . 
+	 * modifier des tuples dans la table triangle.
+	 * 
+	 * @param obj .
 	 */
 	public Triangle update(final Triangle obj) {
 		PreparedStatement statement = null;
@@ -150,7 +154,8 @@ public class TriangleDaoJdbc implements Dao<Triangle> {
 	}
 
 	/**
-	 *  supprimer des tuples dans la table triangle.
+	 * supprimer des tuples dans la table triangle.
+	 * 
 	 * @param obj .
 	 */
 	public void delete(Triangle obj) {
