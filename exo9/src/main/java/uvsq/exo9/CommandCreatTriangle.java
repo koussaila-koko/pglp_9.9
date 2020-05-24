@@ -32,12 +32,11 @@ public class CommandCreatTriangle implements CommandCreateForme<Triangle> {
 	 * constructeur CommandCreatTriangle.
 	 * 
 	 * @param name le nom d triangle.
-	 * @param np1   point 1.
-	 * @param np2   point 2.
-	 * @param np3   point 3.
+	 * @param np1  point 1.
+	 * @param np2  point 2.
+	 * @param np3  point 3.
 	 */
-	public CommandCreatTriangle(final String name, final Point np1,
-			final Point np2, final Point np3) {
+	public CommandCreatTriangle(final String name, final Point np1, final Point np2, final Point np3) {
 		this.name = name;
 		this.p1 = np1;
 		this.p2 = np2;
