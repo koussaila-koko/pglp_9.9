@@ -17,15 +17,19 @@ public class Point {
 	 * int y position du point sur l'axe Y.
 	 */
 	private int py;
+
 	/**
-	 * setX 
+	 * setX
+	 * 
 	 * @param x .
 	 */
 	public void setX(final int x) {
 		this.px = x;
 	}
+
 	/**
-	 * sety 
+	 * sety
+	 * 
 	 * @param y .
 	 */
 	public void setY(final int y) {
@@ -35,10 +39,10 @@ public class Point {
 	/**
 	 * constructeur Point.
 	 * 
-	 * @param x  l'axe X.
-	 * @param y  l'axe Y.
+	 * @param x l'axe X.
+	 * @param y l'axe Y.
 	 */
-	public Point(final int x,final int y) {
+	public Point(final int x, final int y) {
 		this.px = x;
 		this.py = y;
 	}
@@ -63,15 +67,16 @@ public class Point {
 
 	/**
 	 * sommePoint pour deplacer .
-	
+	 * 
 	 */
 	public void sommePoint(final double x, final double y) {
 		this.px += x;
 		this.py += y;
 	}
+
 	/**
-	 * toString  .
-	 *  */
+	 * toString .
+	 */
 	@Override
 	public String toString() {
 		return "(" + "x=" + px + ", y=" + py + ')';
