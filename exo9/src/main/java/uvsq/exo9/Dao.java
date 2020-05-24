@@ -16,14 +16,16 @@ public interface Dao<T> {
 	 * @return object .
 	 */
 
-	T create( final T obj);
+	T create(final T obj);
+
 	/**
 	 * find .
 	 *
-	 * @param obj object.
+	 * @param s .
 	 * @return object .
 	 */
 	T find(final String s);
+
 	/**
 	 * update .
 	 *
@@ -31,11 +33,11 @@ public interface Dao<T> {
 	 * @return object .
 	 */
 	T update(final T obj);
+
 	/**
 	 * delete supp.
 	 *
-	 * @param obj object.
-	.
+	 * @param obj object. .
 	 */
 	void delete(final T obj);
 
