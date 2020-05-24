@@ -28,8 +28,8 @@ public class CommandMoveRectangle implements CommandMove {
 	 * constructeur CommandMoveRectangle.
 	 * 
 	 * @param rectang un rectangle
-	 * @param x   deplacemnt sur l'axe x.
-	 * @param y   deplacement sur l'axe y.
+	 * @param dx       deplacemnt sur l'axe x.
+	 * @param dy       deplacement sur l'axe y.
 	 */
 	public CommandMoveRectangle(Rectangle rectang, int dx, int dy) {
 		this.rec = rectang;
