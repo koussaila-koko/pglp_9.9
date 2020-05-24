@@ -1,6 +1,7 @@
 package uvsq.exo9;
 
 import java.sql.SQLException;
+
 /**
  * class EnregisterCommandeMove.
  * 
@@ -20,6 +21,7 @@ public class EnregisterCommandeMove implements EnregistrerCommande {
 
 	/**
 	 * constructeur de la classe CommandDeCreation.
+	 * 
 	 * @param forme forme à créer
 	 * @throws SQLException lever les Exceptions SQL
 	 */
@@ -36,9 +38,9 @@ public class EnregisterCommandeMove implements EnregistrerCommande {
 	public final Forme getForme() {
 		return this.forme;
 	}
+
 	/**
-	 * La methode execute.
-	 * la methode qui cree la forme choisi .
+	 * La methode execute. la methode qui cree la forme choisi .
 	 * 
 	 */
 	@Override
