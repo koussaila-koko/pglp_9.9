@@ -25,7 +25,7 @@ public class Cercle extends Forme {
 	 * @param centre de cercle.
 	 * @param rayon  de cercle.
 	 */
-	public Cercle(final String name, final Point centre, final  double rayon) {
+	public Cercle(final String name, final Point centre, final double rayon) {
 		super(name);
 		this.centre = centre;
 		this.rayon = rayon;
@@ -68,7 +68,8 @@ public class Cercle extends Forme {
 
 	@Override
 	/**
-	 * methode pour deplacer . 
+	 * methode pour deplacer .
+	 * 
 	 * @param x c'est la valeur de deplacement pour x .
 	 * 
 	 * @param y c'est la valeur de deplacement pour y.
