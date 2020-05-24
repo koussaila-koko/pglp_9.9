@@ -27,12 +27,11 @@ public class CommandMoveGroup implements CommandMove {
 	/**
 	 * constructor CommandMoveGroup.
 	 * 
-	 * @param g le groupe a deplacé.
+	 * @param g  le groupe a deplacé.
 	 * @param dx deplacement sur l'axe x.
 	 * @param dy deplacemnt sur l'axe y.
 	 */
-	public CommandMoveGroup(final GroupeForme g, final int dx,
-			final int dy) {
+	public CommandMoveGroup(final GroupeForme g, final int dx, final int dy) {
 		this.groupe = g;
 		this.depX = dx;
 		this.depY = dy;
