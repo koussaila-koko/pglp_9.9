@@ -32,8 +32,7 @@ public class CercleDaoJdbc implements Dao<Cercle> {
 
 	/**
 	 * constructor CercleDaoJdbc.
-	 * 
-	 * @throws SQLException Exception sql.
+	 *
 	 * @param connect la connexion
 	 */
 	public CercleDaoJdbc(final Connection connect) {
@@ -51,10 +50,9 @@ public class CercleDaoJdbc implements Dao<Cercle> {
 	}
 
 	/**
-	 * insérer des tuples dans la table cercle.
-	 * on recupere ces informations
-	 * apres on insere dans la table 
-	 * @throws SQLException Exception sql.
+	 * insérer des tuples dans la table cercle. on recupere ces informations apres
+	 * on insere dans la table
+	 *
 	 * @return obj le nouveux cercle.
 	 */
 	public Cercle create(final Cercle obj) {
@@ -88,8 +86,7 @@ public class CercleDaoJdbc implements Dao<Cercle> {
 
 	/**
 	 * find pour cherhcher si il exite un touble dans la table cercle.
-	 * @throws s .
-	 * @throws SQLException Exception sql.
+	 *
 	 * @return c .
 	 */
 	public Cercle find(final String s) {
@@ -156,9 +153,8 @@ public class CercleDaoJdbc implements Dao<Cercle> {
 
 	/**
 	 * supprimer des tuples dans la table cercle.
-	 * 
+	 *
 	 * @param obj le cercle.
-	 * @throws SQLException Exception sql.
 	 */
 	public void delete(final Cercle obj) {
 		PreparedStatement statement = null;
@@ -189,7 +185,7 @@ public class CercleDaoJdbc implements Dao<Cercle> {
 	 * existance dun tuble dans une table.
 	 * 
 	 * @param tableName nom de la table.
-	 * @param conn  la connexion.
+	 * @param conn      la connexion.
 	 * @return resultat 0 ou 1
 	 * @throws SQLException Exception sql.
 	 * 
