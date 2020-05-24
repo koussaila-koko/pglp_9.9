@@ -30,13 +30,13 @@ public class CommandCreateRectangle implements CommandCreateForme<Rectangle> {
 
 	/**
 	 * costructeur CommandCreateRectangle.
-	 * @param le nom d rectangle .
+	 *
+	 * @param nom  nom d rectangle .
 	 * @param p   le point reference.
 	 * @param lon la longueur d rectangle.
 	 * @param lar la largeur d rectangle.
 	 */
-	public CommandCreateRectangle(final String nom, final Point p,
-			final double lon, final double lar) {
+	public CommandCreateRectangle(final String nom, final Point p, final double lon, final double lar) {
 		this.name = nom;
 		this.pointRect = p;
 		this.lon = lon;
