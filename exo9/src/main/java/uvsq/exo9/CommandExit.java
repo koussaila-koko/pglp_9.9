@@ -9,8 +9,7 @@ package uvsq.exo9;
 public class CommandExit implements CommandMove {
 
 	/**
-	 * executer la commande exit
-	 * c'est pour quitter.
+	 * executer la commande exit c'est pour quitter.
 	 */
 	@Override
 	public void execute() {
