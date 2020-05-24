@@ -1,14 +1,14 @@
 package uvsq.exo9;
 
 import java.sql.SQLException;
+
 /**
  * class EnregistrerCommandeCreate.
  * 
  * @author Koussaila HAMMOUCHE .
  *
  */
-public class EnregistrerCommandeCreate implements EnregistrerCommande
-{
+public class EnregistrerCommandeCreate implements EnregistrerCommande {
 	/**
 	 * forme à créer.
 	 */
