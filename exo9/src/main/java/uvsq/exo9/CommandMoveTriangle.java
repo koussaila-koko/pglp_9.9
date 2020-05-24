@@ -27,12 +27,11 @@ public class CommandMoveTriangle implements CommandMove {
 	/**
 	 * constructeur CommandMoveTriangle.
 	 * 
-	 * @param t triangle.
+	 * @param triang  triangle.
 	 * @param dx deplacement x.
 	 * @param dy deplacment y.
 	 */
-	public CommandMoveTriangle(final Triangle triang,final int dx,
-			final int dy) {
+	public CommandMoveTriangle(final Triangle triang, final int dx, final int dy) {
 		this.tr = triang;
 		this.depX = dx;
 		this.depY = dy;
