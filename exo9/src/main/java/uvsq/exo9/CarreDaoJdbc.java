@@ -31,9 +31,8 @@ public class CarreDaoJdbc implements Dao<Carre> {
 	private Statement statement;
 
 	/**
-	 * le constructor CarreDaoJdbc. il test si la table elle n'existe
-	 * pas dans deja dans sa connection apres il excute la reque
-	 * sql pour cree la table carré
+	 * le constructor CarreDaoJdbc. il test si la table elle n'existe pas dans deja
+	 * dans sa connection apres il excute la reque sql pour cree la table carré
 	 * 
 	 * @param c la connexion .
 	 */
@@ -52,8 +51,7 @@ public class CarreDaoJdbc implements Dao<Carre> {
 	}
 
 	/**
-	 * create pour créé un caréé on recuper les donnees de carré
-	 *on inser dans la
+	 * create pour créé un caréé on recuper les donnees de carré on inser dans la
 	 * conn ces donner recuperer
 	 * 
 	 * @param obj de type carré
@@ -90,12 +88,10 @@ public class CarreDaoJdbc implements Dao<Carre> {
 	}
 
 	/**
-	 * find elle cherche un carré qui a le nom s .
-	 * dans la bdd si il existe elle
+	 * find elle cherche un carré qui a le nom s . dans la bdd si il existe elle
 	 * retourne ce carré sinon elle nous renvoie un message
 	 *
 	 * @param s le nom de carré a cherche
-	 * @throws SQLException En cas d'erreur d'ecriture .
 	 */
 	public Carre find(final String s) {
 		Carre c = null;
@@ -127,8 +123,9 @@ public class CarreDaoJdbc implements Dao<Carre> {
 	}
 
 	/**
-	 * update pour modifier le carré obj .
-	 * on recupere les nouveux valeur de carré et modifier le carré
+	 * update pour modifier le carré obj . on recupere les nouveux valeur de carré
+	 * et modifier le carré
+	 * 
 	 * @param obj le carré a modifer.
 	 */
 	public Carre update(final Carre obj) {
@@ -159,9 +156,9 @@ public class CarreDaoJdbc implements Dao<Carre> {
 	}
 
 	/**
-	 * delete pour supprimer un tuble dans la table carré.
-	 * on recuper le nom de carré 
-	 * grace a son nom (id) on peut le supprimer
+	 * delete pour supprimer un tuble dans la table carré. on recuper le nom de
+	 * carré grace a son nom (id) on peut le supprimer
+	 * 
 	 * @param obj cest un carré .
 	 */
 	public void delete(final Carre obj) {
@@ -192,8 +189,9 @@ public class CarreDaoJdbc implements Dao<Carre> {
 
 	/**
 	 * poue verifier si une table existe ?.
+	 * 
 	 * @param tableName nom de la table.
-	 * @param c     la connexion.
+	 * @param c         la connexion.
 	 * @return renvoie une valeur booléenne si l'objet ResultSet contient plus de
 	 *         lignes.
 	 * @throws SQLException Exception sql.
