@@ -30,8 +30,7 @@ public class CommandCreateCercle implements CommandCreateForme<Cercle> {
 	 * @param centre centre de cercle.
 	 * @param rayon  de cercle.
 	 */
-	public CommandCreateCercle(final String name, final Point centre,
-			final double rayon) {
+	public CommandCreateCercle(final String name, final Point centre, final double rayon) {
 		this.name = name;
 		this.centre = centre;
 		this.rayon = rayon;
