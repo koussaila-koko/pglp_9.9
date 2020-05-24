@@ -18,7 +18,7 @@ public abstract class Forme {
 	}
 
 	/**
-	 *  nom de la forme.
+	 * nom de la forme.
 	 */
 	protected String name;
 
@@ -34,11 +34,10 @@ public abstract class Forme {
 	/**
 	 * methode pour deplacer une forme.
 	 * 
-	 * @param x position du x.
-	 * @param y position du y.
+	 * @param dx position du x.
+	 * @param dy position du y.
 	 */
 	public abstract void deplacer(final int dx, final int dy);
-
 
 	public abstract void print();
 
