@@ -4,24 +4,26 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class DrawingApp {
-	/** 
-	 * lecture 
-	  */
+	/**
+	 * lecture
+	 */
 	private Scanner saisie;
-	/** 
-	 * interpreteur 
+	/**
+	 * interpreteur
 	 */
 	private DrawingTUI dt;
 
-	/** 
-	 * constructeur de la class DrawingApp. 
+	/**
+	 * constructeur de la class DrawingApp.
 	 */
 	public DrawingApp() {
 		dt = new DrawingTUI();
 		saisie = new Scanner(System.in);
 	}
+
 	/**
 	 * application run .
+	 * 
 	 * @throws SQLException Exception sql.
 	 */
 	public void run(String[] args) throws SQLException {
@@ -48,6 +50,7 @@ public class DrawingApp {
 			}
 		}
 	}
+
 	/**
 	 * le main faire l apple.
 	 */
