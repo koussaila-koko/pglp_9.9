@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+
 /**
- * classe GroupeDaoJdbc .
- * koussaila HAMMOUCHE .
+ * classe GroupeDaoJdbc . koussaila HAMMOUCHE .
  */
 public class GroupeDaoJdbc implements Dao<GroupeForme> {
 	/**
@@ -18,11 +18,13 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 	private Connection conn = null;
 	String sql = "CREATE TABLE Groupes (nomGroupe varchar(40) PRIMARY KEY NOT NULL) ";
 	/**
-	 * Statement   .
+	 * Statement .
 	 */
 	private Statement statement;
+
 	/**
-	 * GroupeDaoJdbc   .
+	 * GroupeDaoJdbc .
+	 * 
 	 * @param connect connexion
 	 */
 	public GroupeDaoJdbc(final Connection connect) {
@@ -37,9 +39,11 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 			e.printStackTrace();
 		}
 	}
+
 	/**
-	 * create  .
-	 * @param obj 
+	 * create .
+	 * 
+	 * @param obj
 	 */
 	public GroupeForme create(final GroupeForme obj) {
 		PreparedStatement statement = null;
@@ -66,7 +70,7 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 				statement.close();
 			}
 		} catch (SQLException e) {
-			
+
 			e.printStackTrace();
 		}
 
@@ -78,13 +82,15 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 		}
 
 	}
+
 	/**
 	 * find .
+	 * 
 	 * @param id .
 	 */
 	public GroupeForme find(final String id) {
 		GroupeForme g = null;
-		
+
 		PreparedStatement statementG = null;
 		PreparedStatement statementCr = null;
 		PreparedStatement statementCl = null;
@@ -204,8 +210,10 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 		}
 		return g;
 	}
+
 	/**
 	 * update pour modifier .
+	 * 
 	 * @param obj de type GroupeForme
 	 */
 	public GroupeForme update(final GroupeForme obj) {
@@ -297,8 +305,10 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 		}
 		return obj;
 	}
+
 	/**
 	 * delete suprimer le groupe obj .
+	 * 
 	 * @param obj .
 	 */
 	public void delete(final GroupeForme obj) {
@@ -315,7 +325,7 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 				System.out.println("element n'existe pas");
 			}
 		} catch (SQLException e) {
-			
+
 			e.printStackTrace();
 		}
 
@@ -324,7 +334,7 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 				statement.close();
 			}
 		} catch (SQLException e) {
-			
+
 			e.printStackTrace();
 		}
 
@@ -334,9 +344,8 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 	 * methode pour savoir si la table existe déja ou non.
 	 * 
 	 * @param tableName nom de la table.
-	 * @param c      la connexion.
-	 * @return renvoie une valeur booléenne si
-	 * l'objet Result Set contient plus de
+	 * @param c         la connexion.
+	 * @return renvoie une valeur booléenne si l'objet Result Set contient plus de
 	 *         lignes.
 	 * @throws SQLException Exception sql.
 	 */
@@ -347,6 +356,5 @@ public class GroupeDaoJdbc implements Dao<GroupeForme> {
 
 		return result.next();
 	}
-	
 
 }
