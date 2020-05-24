@@ -8,8 +8,7 @@ package uvsq.exo9;
  */
 public interface CommandMove extends Icommande {
 	/**
-	 * executer les commande move 
-	 * pour se  deplacer.
+	 * executer les commande move pour se deplacer.
 	 */
 	void execute();
 }
