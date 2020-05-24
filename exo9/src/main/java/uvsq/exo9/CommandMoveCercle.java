@@ -26,7 +26,7 @@ public class CommandMoveCercle implements CommandMove {
 	/**
 	 * constructeur CommandMoveCercle.
 	 * 
-	 * @param c cercle.
+	 * @param c  cercle.
 	 * @param dx deplacement sur l'axe x.
 	 * @param dy deplacement sur l'axe y.
 	 */
