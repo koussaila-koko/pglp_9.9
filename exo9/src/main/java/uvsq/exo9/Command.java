@@ -8,13 +8,16 @@ package uvsq.exo9;
 public interface Command {
 	/**
 	 * init .
-	 * @param s .
+	 * 
+	 * @param S .
 	 */
 	void init(final String S);
+
 	/**
 	 * execute
 	 */
 	void execute();
+
 	/**
 	 * print
 	 */
