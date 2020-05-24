@@ -29,7 +29,7 @@ public class GroupeForme extends Forme {
 	}
 
 	/**
-	 *  ajouter une forme dans un groupe.
+	 * ajouter une forme dans un groupe.
 	 * 
 	 * @param nf forme.
 	 */
@@ -51,7 +51,7 @@ public class GroupeForme extends Forme {
 	}
 
 	/**
-	 *retourner la liste des formes d'un groupe.
+	 * retourner la liste des formes d'un groupe.
 	 * 
 	 * @return formes.
 	 */
@@ -61,6 +61,7 @@ public class GroupeForme extends Forme {
 
 	/**
 	 * deplacer les formes du groupe.
+	 * 
 	 * @param dx .
 	 * @param dy .
 	 */
@@ -81,12 +82,14 @@ public class GroupeForme extends Forme {
 		}
 
 	}
+
 	/**
-	 * getElementList  elle retourn List .
+	 * getElementList elle retourn List .
 	 */
 	public List getElementList() {
 		return (List) Collections.unmodifiableList(formes);
 	}
+
 	/**
 	 * getListe elle retourne ArrayList .
 	 */
